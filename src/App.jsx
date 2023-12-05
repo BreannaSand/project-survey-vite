@@ -3,8 +3,8 @@ import { MultiStepForm } from './components/MultiStepForm';
 
 export const App = () => {
   return (
-    <div>Find me in src/app.jsx!!
-
+    <div>
+      <h1>Disneyland Fast Track Booking</h1>
       {<MultiStepForm />}
     </div>
   );

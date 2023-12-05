@@ -3,7 +3,7 @@
 export const Day = ({ updateFormData, value }) => {
     const dayInput = () => updateFormData("day", "today");
     return (
-        <div>
+        <div className="day-wrapper">
             <label>Day:</label>
             <input type="string" value={value} onChange={dayInput} />
         </div>

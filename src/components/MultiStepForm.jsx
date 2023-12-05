@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { Day } from "./Day"
+import { Day } from "./Day";
+import { Time } from "./Time";
+import { Attraction } from "./Attraction";
+import { Summary } from "./Summary";
 
 export const MultiStepForm = () => {
     const [formData, setFormData] = useState({
-        day: ""
-
+        day: "",
+        time: "",
+        attraction: ""
     });
 
     const updateFormData = (field, value) => {
@@ -14,9 +18,12 @@ export const MultiStepForm = () => {
     console.log(formData)
     return (
 
-        <div>
-            MultiStepForm
+        <div className="form-wrapper">
+            <p>Fast Track Booking Form</p>
             {<Day value="today" updateFormData={updateFormData} />}
+            {<Time value="morning" updateFormData={updateFormData} />}
+            {<Attraction value="haunted mansion" updateFormData={updateFormData} />}
+            {<Summary />}
         </div>
 
 

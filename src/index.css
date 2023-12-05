@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+
+  margin: 40px;
+  background-image: url('assets/disneyland.jpg');
+  background-size: cover;
+  /* Adjust as needed: cover, contain, or specific dimensions */
+  background-position: center;
+  /* Adjust as needed: center, top, left, etc. */
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* Ensure full viewport height */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form-wrapper {
+  position: relative;
+  top: 80px;
+  left: 90px;
+}
+
+.day-wrapper {
+  margin-bottom: 20px;
+}
+
+.time-wrapper {
+  margin-bottom: 20px;
+}
+
+.attraction-wrapper {
+  margin-bottom: 20px;
+}
+
+.form-wrapper p {
+  margin-bottom: 20px;
+
+}
