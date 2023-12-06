@@ -3,6 +3,7 @@ import { Day } from "./Day";
 import { Time } from "./Time";
 import { Attraction } from "./Attraction";
 import { Summary } from "./Summary";
+import { Submit } from "./Submit";
 
 export const MultiStepForm = () => {
     const [formData, setFormData] = useState({
@@ -12,7 +13,10 @@ export const MultiStepForm = () => {
     });
 
     const updateFormData = (field, value) => {
-        setFormData((previous) => ({ ...previous, [field]: value }))
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [field]: value,
+        }));
     }
 
     console.log(formData)
@@ -20,11 +24,13 @@ export const MultiStepForm = () => {
 
         <div className="form-wrapper">
             <p>Fast Track Booking Form</p>
-            {<Day value="today" updateFormData={updateFormData} />}
-            {<Time value="morning" updateFormData={updateFormData} />}
-            {<Attraction value="haunted mansion" updateFormData={updateFormData} />}
-            {<Summary />}
+            {<Attraction updateFormData={updateFormData} />}
+            {<Day updateFormData={updateFormData} />}
+            {<Time updateFormData={updateFormData} />}
+            {<Submit />}
+            {<Summary attraction={formData.attraction} day={formData.day} time={formData.time} />}
         </div>
+
 
 
     );
