@@ -3,7 +3,6 @@ import { Day } from "./Day";
 import { Time } from "./Time";
 import { Attraction } from "./Attraction";
 import { Summary } from "./Summary";
-import { Submit } from "./Submit";
 
 export const MultiStepForm = () => {
     const [formData, setFormData] = useState({
@@ -27,7 +26,6 @@ export const MultiStepForm = () => {
             {<Attraction updateFormData={updateFormData} />}
             {<Day updateFormData={updateFormData} />}
             {<Time updateFormData={updateFormData} />}
-            {<Submit />}
             {<Summary attraction={formData.attraction} day={formData.day} time={formData.time} />}
         </div>
 

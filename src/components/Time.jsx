@@ -7,7 +7,7 @@ export const Time = ({ updateFormData }) => {
     const handleInputChange = (event) => {
         const newValue = event.target.value;
         setSelectedValue(newValue);
-        updateFormData("time", selectedValue);
+        updateFormData("time", newValue);
         console.log(selectedValue);
 
     };

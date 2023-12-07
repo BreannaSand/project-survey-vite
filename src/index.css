@@ -85,8 +85,10 @@ button {
   color: navy;
 }
 
-.summary-wrap h2 {
+.summary-wrap p {
   text-align: center;
 }
 
-.submitButton {}
+.summary-wrap h1 {
+  text-size: 10px;
+}

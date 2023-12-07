@@ -3,15 +3,16 @@ import { useState } from "react";
 export const Attraction = ({ updateFormData }) => {
 
 
-    const [selectedValue, setSelectedValue] = useState('')
+    const [selectedValue, setSelectedValue] = useState('hello');
 
     const handleSelectChange = (event) => {
         const newValue = event.target.value;
         setSelectedValue(newValue);
-        updateFormData("attraction", selectedValue);
+        updateFormData("attraction", newValue);
         console.log(selectedValue);
-
+        console.log(newValue);
     };
+
 
     return (
         <div className="attraction-wrapper">

@@ -7,7 +7,7 @@ export const Day = ({ updateFormData }) => {
     const handleInputChange = (event) => {
         const newValue = event.target.value;
         setSelectedValue(newValue);
-        updateFormData("day", selectedValue);
+        updateFormData("day", newValue);
         console.log(selectedValue);
 
     };
