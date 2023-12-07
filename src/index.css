@@ -75,4 +75,18 @@ button {
   border-radius: 8px;
 }
 
+.summary-wrap {
+  background: pink;
+  padding: 10px;
+  position: absolute;
+  width: 300px;
+  left: 10px;
+  top: 40px;
+  color: navy;
+}
+
+.summary-wrap h2 {
+  text-align: center;
+}
+
 .submitButton {}

@@ -17,7 +17,7 @@ export const Attraction = ({ updateFormData }) => {
         <div className="attraction-wrapper">
             <label htmlFor="attraction">Attraction:  </label>
             <select id="attraction" name="attraction" onChange={handleSelectChange}>
-                <option value="choose" selected>Choose: </option>
+                <option value="choose" defaultValue>Choose: </option>
                 <option value="hauntedMansion">Haunted Mansion</option>
                 <option value="spaceMountain">Space Mountain</option>
                 <option value="pirates">Pirates of The Caribbean</option>

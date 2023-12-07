@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 export const Time = ({ updateFormData }) => {
-    //const timeInput = () => updateFormData("time", "evening");
 
     const [selectedValue, setSelectedValue] = useState('')
 
@@ -14,12 +13,12 @@ export const Time = ({ updateFormData }) => {
     };
     return (
         <div className="time-wrapper">
-            <label>Time:   </label>
-            <select id="time" name="time" >
-                <option value="choose" selected>Choose: </option>
-                <option value="morning" onChange={handleInputChange}>Morning</option>
-                <option value="afternoon" onChange={handleInputChange}>Afternoon</option>
-                <option value="night" onChange={handleInputChange}>Night</option>
+            <label htmlFor="attraction">Time:   </label>
+            <select id="time" name="time" onChange={handleInputChange}>
+                <option value="choose" defaultValue >Choose: </option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
             </select>
         </div>
     )
